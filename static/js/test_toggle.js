@@ -8,7 +8,7 @@ const nodejsIntegration = {
     computed: {
         body_data() {
             const {
-                description,
+                config,
                 is_default,
                 selected_integration: id,
                 save_intermediates_to,
@@ -16,7 +16,7 @@ const nodejsIntegration = {
                 composition_analysis,
             } = this
             return {
-                description,
+                config,
                 is_default,
                 id,
                 save_intermediates_to,
@@ -65,6 +65,7 @@ const nodejsIntegration = {
         initialState: () => ({
             // toggle: false,
             error: {},
+            config: {},
             save_intermediates_to: '/data/intermediates/sast',
             devdep: false,
             composition_analysis: false,
