@@ -94,7 +94,6 @@ const nodejsIntegration = {
                 composition_analysis,
 
                 status,
-                mode,
             } = this
             return {
                 config,
@@ -104,7 +103,6 @@ const nodejsIntegration = {
                 devdep,
                 composition_analysis,
                 status,
-                mode,
             }
         },
         modal() {
