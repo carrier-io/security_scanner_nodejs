@@ -4,7 +4,7 @@ from pydantic import BaseModel
 
 
 class IntegrationModel(BaseModel):
-    save_intermediates_to: Optional[str] = '/data/intermediates/sast'
+    # save_intermediates_to: Optional[str] = '/data/intermediates/sast'
     devdep: Optional[bool] = False
     composition_analysis: Optional[bool] = False
 
@@ -14,5 +14,3 @@ class IntegrationModel(BaseModel):
         except Exception as e:
             log.exception(e)
             return False
-    
-
